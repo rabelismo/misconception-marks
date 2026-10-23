@@ -1,0 +1,66 @@
+{
+  "totais": {
+    "execucoes_teste": 460788,
+    "submissoes": 157243,
+    "submissoes_corretas": 60242,
+    "analisadas": 140575,
+    "sem_parse": 16668
+  },
+  "estudantes_com_submissao": 691,
+  "estudantes_com_eventos_editor": 691,
+  "exercicios_por_estudante_mediana": 90,
+  "regras": {
+    "C8": {
+      "com_oportunidade": 13034,
+      "marcadas": 278,
+      "marcadas_corretas": 67,
+      "estudantes_com_marca": 91,
+      "estudantes_com_marca_e_oportunidade_de_repetir": 90,
+      "estudantes_com_marca_em_2_ou_mais_exercicios": 24,
+      "persistencia_no_exercicio": {
+        "marca_removida": 67,
+        "reenvio_editado_com_marca": 131,
+        "reenvio_identico": 15
+      }
+    },
+    "PD7": {
+      "com_oportunidade": 4951,
+      "marcadas": 100,
+      "marcadas_corretas": 0,
+      "estudantes_com_marca": 35,
+      "estudantes_com_marca_e_oportunidade_de_repetir": 35,
+      "estudantes_com_marca_em_2_ou_mais_exercicios": 13,
+      "persistencia_no_exercicio": {
+        "reenvio_editado_com_marca": 35,
+        "marca_removida": 53,
+        "reenvio_identico": 10
+      }
+    },
+    "PH2": {
+      "com_oportunidade": 19103,
+      "marcadas": 60,
+      "marcadas_corretas": 9,
+      "estudantes_com_marca": 26,
+      "estudantes_com_marca_e_oportunidade_de_repetir": 26,
+      "estudantes_com_marca_em_2_ou_mais_exercicios": 6,
+      "persistencia_no_exercicio": {
+        "marca_removida": 28,
+        "reenvio_editado_com_marca": 18,
+        "reenvio_identico": 4
+      }
+    },
+    "PD1": {
+      "com_oportunidade": 26220,
+      "marcadas": 1690,
+      "marcadas_corretas": 3,
+      "estudantes_com_marca": 298,
+      "estudantes_com_marca_e_oportunidade_de_repetir": 297,
+      "estudantes_com_marca_em_2_ou_mais_exercicios": 167,
+      "persistencia_no_exercicio": {
+        "marca_removida": 640,
+        "reenvio_identico": 453,
+        "reenvio_editado_com_marca": 508
+      }
+    }
+  }
+}

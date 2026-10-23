@@ -1,0 +1,1024 @@
+regra,arquivo,instante,nota,codigo,marca_presente (s/n),parece_crenca_ou_descuido,observacao
+C8,2022-1/441/users/7668/executions/4187_3189.log,2023-01-31 09:27:06,0.0,"from numpy import*
+x=0
+cont=0
+i=0
+z=0
+v=array(eval(input("""")))
+v1=array(eval(input("""")))
+v2=int(input(""""))
+for i in range(size(v)):
+	if(v[i]>5 and v1[i]>=v2*0.75):
+		z=z+1
+	if(v[i]<5 and v1[i]>=v2*0.75):
+		x=x+1
+	if(v1[i]<v2*0.75):
+		cont=cont+1
+	i=i+1	
+print(z,x,cont)",,,
+C8,2023-1/530/users/8750/executions/5164_6382.log,2023-11-07 15:40:40,100.0,"from numpy import*
+f = array(eval(input(""numero: "")))
+z = zeros(size(f), dtype = int)
+e = 0
+for e in range (size(f)):
+	if f[e]== 9:
+		z[e]= 0
+	else:
+		z[e]=(f[e]+1)**2
+		e=e+1
+print(z)",,,
+C8,2022-2/491/users/8305/executions/4793_6362.log,2023-06-22 18:19:22,,"n = int(input())
+i =0
+for i in range(n, 4, -1):
+	if i >= range[i]:
+		i = i +1
+	else:
+		i = 'Fim da cntagem regressiva'
+print(i)
+	",,,
+C8,2022-1/443/users/7592/executions/4191_1223.log,2023-02-07 13:52:29,100.0,"from numpy import *
+
+k = int(input())
+
+i = 0
+
+for i in range(k):
+	print((k - i) * '*')
+	i += 1
+
+j = 1
+
+for j in range(k):
+	j += 1
+	print(j * '*')",,,
+C8,2022-1/445/users/7611/executions/4194_2139.log,2023-02-02 19:33:09,33.0,"from numpy import*
+faa = array(eval(input('Insira: ')))
+g1 = 0
+g2 = 0
+for i in range(size(faa)):
+	if faa[i] % 2 == 0:
+		g1 += 1
+
+qddag1 = array(zeros(g1, dtype = int))
+a = 0
+for i in range(size(faa)):
+	if faa[i]% 2 == 0:
+		qddag1[i] = faa[i]
+		i += 1
+print(qddag1)",,,
+C8,2022-1/443/users/7748/executions/4191_3620.log,2023-01-31 14:14:19,0.0,"#Importar modulo numpy para trabalhar com vetores
+from numpy import *
+golpro = array(eval(input(""Vetor com numero de gols do time"")))
+golcontra = array(eval(input(""Vetor com numero de gols do time adversario"")))
+v=0
+e=0
+d=0
+i=0
+for i in range(size(golpro)):
+
+	if(golpro[i]>golcontra[i]):
+	
+		v = v+1
+
+	elif(golpro[i]>golcontra[i]):	
+	
+		e = e+1
+	
+	else:
+		d=d+0
+	i=i+1
+	
+v0= array([v,e,d])
+print(v0)		",,,
+C8,2022-1/444/users/2912/executions/4237_3209.log,2023-02-16 18:06:14,100.0,"from numpy import *
+setor = int(input())
+prod = int(input())
+preco = zeros((setor,prod))
+for i in range(setor):
+	preco[i] = array(eval(input()))
+	i+=1
+for i in range(setor):
+	print(""O total do setor"", i+1,"" e:"",sum(preco[i,:]), ""reais"")
+	i+=1
+print(preco)
+",,,
+C8,2023-1/525/users/8647/executions/5133_6354.log,2023-10-30 10:25:02,,"from numpy import *
+
+livro = array(eval(input(""Quais foram os livros?: ""))).upper().split("", "")
+
+i = 0
+arm = zeros(4, dtype=int)
+
+for i in range(size(livro)):
+	if livro[i] == ""R"":
+		arm[0] += 1
+
+	elif livro[i] == ""F"":
+		arm[1] += 1
+	
+	elif livro[i] == ""S"":
+		arm[2] += 1
+		
+	elif livro[i] == ""T"":
+		arm[3] += 1
+		
+	i += 1
+	
+print((arm))",,,
+C8,2022-1/443/users/7584/executions/4242_1648.log,2023-02-07 14:49:08,,"from numpy import * 
+
+notas = array(eval(input(""Notas: "")))
+
+i = 0 
+
+for j in range(size(notas)):
+	if(notas[j] < 70):
+		i = i + 1
+		j = j + 1
+print(i)
+
+vet = zeros(i, dtype = int)
+
+for j in range(size(notas)):
+	if(notas[j] < 70):
+		vet[i] = notas[j]
+	j = j + 1 
+print(vet)",,,
+C8,2023-1/523/users/8667/executions/5140_2588.log,2023-11-05 19:04:43,100.0,"from numpy import*
+
+reg = array(eval(input(""Digite o limite e as velocidades: "")))
+porcent1 = (20/100)* reg[0]
+porcent2 = (50/100)* reg[0]
+acm = 0
+
+for i in range(size(reg)):
+	if (reg[i] > reg[0]): 
+		if ((reg[i] > (reg[0]+porcent1)) and (reg[i] < (reg[0]+porcent2))):
+			acm = acm + 1
+			print(i)
+	i = i + 1
+print(acm)
+	",,,
+C8,2022-1/444/users/2912/executions/4237_3215.log,2023-02-16 18:25:13,0.0,"from numpy import *
+lista = input()
+lista = lista.split(',')
+print(lista)
+arr = zeros((len(lista),2),dtype=int)
+for i in range(len(lista)):
+	arr[i,0] = lista[i]
+	arr[i,1] = int(input())
+	i+=1
+maximo = max(arr[:,1])
+print(arr)
+
+for i in range(len(lista)):
+	if(arr[i,1]==maximo):
+		print(""O aluno que possui o maior numero de faltas e o"",int(arr[i,0]))
+	i+=1",,,
+C8,2023-1/527/users/8756/executions/5170_6662.log,2023-11-07 16:56:05,33.0,"from numpy import *
+
+produto = array(eval(input()))
+
+i = 0
+j = 0
+
+for i in range(size(produto)):
+	if produto[i] >= 200:
+		j = j + produto[i]
+		i = i + 1
+print(round(j/i,2))",,,
+C8,2022-1/442/users/7580/executions/4189_2588.log,2023-01-31 10:17:44,100.0,"from numpy import *
+v = array(eval(input('.')))
+i ,c = 1,0
+VMS = v[0] + v[0]*0.5
+VMI = v[0] + v[0]*0.2
+for i in range(size(v)):
+	if v[i] > VMI and v[i] < VMS:
+		print(i)
+		c += 1
+	i += 1
+print(c)",,,
+C8,2022-2/486/users/8391/executions/4761_2588.log,2023-06-12 20:27:42,100.0,"from numpy import*
+v= array(eval(input("":"")))
+i,c=1,0
+VMS= v[0] + v[0]*0.5
+VMI= v[0] + v[0]*0.2
+for i in range(size(v)):
+	if v[i] > VMI and v[i] < VMS:
+		print(i)
+		c+=1
+	i+=1
+	
+print(c)",,,
+C8,2023-1/529/users/8636/executions/5176_1654.log,2023-11-06 14:31:09,0.0,"from numpy import*
+
+vet = input(""estados: "").upper().split("","")
+cont = zeros(5, dtype = int)
+
+for i in range (len(vet)):
+	if vet[i] == ""AM"":
+		cont[0] = cont[0] + 1
+	elif vet[i] == ""PE"":
+		cont[1] = cont[1] + 1
+	elif vet[i] == ""MG"":
+		cont[2] = cont[2] + 1
+	elif vet[i] == ""SP"":
+		cont[3] = cont[3] + 1
+	elif vet[i] == ""RS"":
+		cont[4] == cont[4] + 1
+	i = i + 1
+print(max(cont))
+print(i)",,,
+C8,2023-1/528/users/8782/executions/5162_6396.log,2023-11-07 18:38:46,100.0,"from numpy import*
+r = array (eval ( input ( ""numeros: ""))) 
+z = zeros (size(r),dtype=int)
+e=0
+for e in range (size(r)):
+	  if r[e] ==0:
+	  		z[e]=0 
+	  else:
+	  		z[e]= r[e]*2
+	  e=e+1
+print(z)",,,
+C8,2023-1/530/users/8732/executions/5135_1649.log,2023-11-07 12:58:17,100.0,"from numpy import * 
+cont = zeros(5, dtype=int)
+olhos = input(""Cor dos olhos: "").upper().split(',')
+p = 0
+c = 0
+m = 0
+v = 0
+a = 0
+for i in range(size(olhos)):
+	if olhos[i] == ""P"":
+		cont[0] = cont[0] + 1
+		p = p + 1
+	elif olhos[i] == ""C"":
+		cont[1] = cont[1] + 1
+		c = c + 1
+	elif olhos[i] == ""M"":
+		cont[2] = cont[2] + 1
+		m = m + 1
+	elif olhos[i] == ""V"":
+		cont[3] = cont[3] + 1
+		v = v + 1
+	elif olhos[i] == ""A"":
+		cont[4] = cont[4] + 1
+		a = a + 1
+	i = i + 1
+
+print(max(cont))
+print(cont)
+	",,,
+C8,2022-2/485/users/8321/executions/4757_1223.log,2023-06-14 11:29:58,0.0,"n = int(input(""digite um numero: ""))
+
+for i in range (n, 0 , -1):
+	i = i + 1
+	print(""*""*i)
+for i in range ( 1 , n + 1 ):
+	print(""*""*i)
+	",,,
+C8,2022-1/445/users/7602/executions/4239_1644.log,2023-02-07 18:17:19,,"from numpy import*
+
+notas = array(eval(input()))
+
+cont = 0
+for i in range(size(notas)):
+	if notas[i] <= 5:
+		cont += 1
+
+j = 0
+
+vet = zeros(cont,dtype=float)
+
+for j in range(size(notas)):
+	if notas[i] <= 5:
+		vet[j] = j
+	j += 1
+print(cont)
+print(vet)
+	
+",,,
+C8,2022-1/443/users/7584/executions/4191_2139.log,2023-02-02 15:41:23,33.0,"from numpy import *
+
+alunos = array(eval(input(""Valores de cada aluno: "")))
+
+gp1 = 0
+
+for i in range(size(alunos)):
+	if(alunos[i] % 2 == 0):
+		gp1 = gp1 + 1 
+		
+vet = zeros(gp1, dtype = int)
+i1 =0
+
+for i in range(size(alunos)):
+	if(alunos[i] % 2 == 0):
+		vet[i] = alunos[i]
+		i = i + 1	
+print(vet)",,,
+PD7,2023-1/528/users/8772/executions/5162_6677.log,2023-11-07 19:42:30,,"from numpy import * 
+v = zeros(10, dtype= int)
+for i in range(10):
+	n = int(input())
+	if 1 <= n <= 20:
+		v[i] = n
+		
+x=0
+minimo = int(input())
+for i in v:
+	if i >= minimo:
+		x +=1
+print(x)
+
+alunos = zeros(x, dtype=int)
+for i in v:
+	if v[i] >= minimo:
+		alunos[i] = v[i]
+print(alunos)",,,
+PD7,2023-1/527/users/1150/executions/5145_2853.log,2023-10-31 15:57:15,,"from numpy import *
+b=array(eval(input(""vetor"")))
+soma=0
+for x in b:
+	if b != 10 :
+		soma=soma+b[x]
+	else:
+		soma=soma*b[x]
+print(soma)
+",,,
+PD7,2022-1/441/users/6393/executions/4187_1227.log,2023-02-06 23:52:32,,"text = input(""Digite o texto: "".upper()).upper()
+
+n = 0
+
+
+for i in text:
+	if i == ""A"":
+		text[i] = text[()]
+		
+print(text.lower())
+		",,,
+PD7,2023-1/528/users/8785/executions/5162_6663.log,2023-11-07 19:06:17,,"from numpy import *
+
+vl= eval(input(""precodolivro: ""))
+preco= 0
+
+for i in vl:
+	if vl[i] >= 50:
+		media= sum(preco)/size(vl)
+	else:
+		media= 0
+	print(round(media,2))
+print(media)",,,
+PD7,2022-1/441/users/6393/executions/4187_1227.log,2023-02-06 23:54:16,,"text = input(""Digite o texto: "".upper()).upper()
+
+n = 0
+
+
+for i in text:
+	if i == ""A"":
+		text[i] = """"
+		
+print(text.lower())
+		",,,
+PD7,2022-2/485/users/8158/executions/4797_6380.log,2023-06-19 10:54:00,,"from numpy import *
+
+s= input(""Escreva a sequencia de caracteres: "").split(',')
+
+v= zeros(4,dtype=int)
+
+for i in s:
+	if s[i] == ""E"":
+		v[0] = v[0] + 1
+	elif s[i] == ""V"":
+		v[1] == v[1]+1
+	elif s[i] == ""A"":
+		v[2] == v[2]+1
+	elif s[i] == ""D"":
+		v[3] == v[3]+1
+		
+print(v)	",,,
+PD7,2022-2/485/users/7104/executions/4797_6396.log,2023-06-19 10:14:26,,"from numpy import*
+
+mensagem = array(eval(input()))
+
+
+for num in mensagem:
+	dobro = (num * 2) + mensagem [num]
+	
+
+	
+print(dobro)",,,
+PD7,2023-1/527/users/1150/executions/5145_2844.log,2023-10-31 16:22:09,,"from numpy import *
+d=array(eval(input(""vetor"")))
+for i in d:
+	if d[i]==0:
+		d[i]=9
+	else:
+		d[i]=d[1]-1
+print(d)",,,
+PD7,2023-1/530/users/8742/executions/5135_3189.log,2023-10-31 15:24:12,,"from numpy import*
+media = array(eval(input(""medias: "")))
+freq = array(eval(input(""frequencia: "")))
+carga = int(input(""carga horaria: ""))
+result = zeros(3,dtype=int)
+mrda = carga*0.75
+p = 0
+rn = 0
+rf = 0
+
+for i in media:
+	if (media[i] >= 5) and (freq[i] >= mrda):
+		p += 1
+		result[0] = p
+		
+	elif freq[i] < mrda:
+		rf += 1
+		result[2] = rf
+		
+	elif media[i] < 5:
+		rn += 1
+		result[1] = rn
+		
+print(result)",,,
+PD7,2023-1/529/users/8644/executions/5150_1227.log,2023-11-01 13:34:04,,"s = input("""")
+l = """"
+
+for i in s:
+	if(s[i] != ""A"") and (s[i] == ""a""):
+		l = l - s[i]
+	print(l)
+",,,
+PD7,2023-1/529/users/8644/executions/5150_1226.log,2023-11-01 13:10:25,,"from numpy import *
+from math import *
+
+x = array(eval(input("""")))
+m = size(x) / sum(x)
+p = 1
+
+for i in x:
+	p = p * abs(x[i] - m) ** (1 / size(x))
+	print(round(p, 3))",,,
+PD7,2023-1/529/users/8636/executions/5150_2588.log,2023-10-25 13:42:15,,"from numpy import*
+
+vet = array(eval(input(""numeros: "")))
+cont = 0
+
+for x in vet:
+	a = 0.2 * vet[0] + vet[0]
+	b = 0.5 * vet[0] + vet[0]
+	if vet[x] > a and vet[x] < b:
+		cont = cont + 1
+		print(x)
+print(cont)		",,,
+PD7,2023-1/529/users/8637/executions/5150_3189.log,2023-10-30 12:53:25,,"from numpy import *
+n=array(eval(input()))
+f=array(eval(input()))
+c=int(input())
+
+ncont=zeros(3, dtype=int)
+for i in n:
+	if n[i]>=5 and f[i]>=0.75 *c:
+		ncont[0]+=1
+	elif n[i]<5 and f[i]>=0.75 *c:
+		ncont[1]+=1
+	else:
+		ncont[2]+=1
+print(ncont)",,,
+PD7,2022-2/485/users/8170/executions/4797_1647.log,2023-06-19 11:09:07,,"from numpy import*
+v = array(eval(input(""Porc de aulas frequentadas: "")))
+q = 0
+for i in range(size(v)):
+	if (v[i]>=70):
+		q = q + 1
+print(q)
+
+z = zeros(q, dtype = int)
+x = 0
+for j in v:
+	if (v[j]>=70):
+		x = x + 1
+print(z)",,,
+PD7,2022-2/485/users/8168/executions/4757_1226.log,2023-06-19 09:45:24,,"from numpy import *
+
+v=array(eval(input("""")))
+calc= sum(v)/size(v)
+x=1
+for y in v:
+	x = x*abs(v[y]-calc)
+print(round(x**(1/size(v)),3))",,,
+PD7,2023-1/527/users/1150/executions/5170_6394.log,2023-11-07 16:26:52,,"from numpy import *
+vet=array(eval(input(""mensagem"")))
+for i in vet:
+	if vet[i]==0:
+		vet[i]=9
+	else:
+		vet[1]=vet[i]-1
+print(vet)",,,
+PD7,2023-1/527/users/1150/executions/5145_2853.log,2023-10-31 15:58:20,,"from numpy import *
+b=array(eval(input(""vetor"")))
+soma=0
+for x in b:
+	if b != 10 :
+		soma=soma+b[x]
+	else:
+		soma=soma*b[x]
+print(soma)
+",,,
+PD7,2022-2/485/users/8168/executions/4757_2588.log,2023-06-11 15:59:44,,"from numpy import *
+
+v=array(eval(input("""")))
+	
+mais=0
+for infracoes in v:
+	if(infracoes>(v[0]+v[0]*0.2) and infracoes<v[0]+v[0]*0.5):
+		print(v[infracoes])
+		mais+=1
+
+print(mais)
+",,,
+PD7,2023-1/528/users/8793/executions/5173_6347.log,2023-11-06 16:35:31,0.0,"n = input(""Insira o nome: "").upper()
+i = 0
+for i in n :
+	if n == i :
+		n[i] += 0
+	
+	
+print(n)
+		
+	
+				 ",,,
+PD7,2022-2/486/users/5038/executions/4761_3189.log,2023-06-18 17:47:15,,"from numpy import*
+notas = array(eval(input(""media final dos alunos: "")))
+freq = input(""frequencia dos alunos: "")
+carga = int(input(""carga horaria da disciplina: ""))
+vet = zeros(3,dtype=int)
+i=0
+for i in notas:
+	if(notas[i] >= 5.0 and (carga*0.75) >= freq[i]):
+		vet[0] += 1
+	elif((carga*0.75) >= freq[i]): 
+		vet[1] += 1
+	else:
+		vet[2] += 1
+print(vet)",,,
+PH2,2023-1/528/users/8790/executions/4884_1559.log,2023-08-03 18:32:06,0.0,"frase = ""Ada Lovelace foi a primeira programadora da historia.""
+frase.upper()",,,
+PH2,2022-1/442/users/7580/executions/4143_2108.log,2023-01-17 13:52:13,0.0,"from numpy import *
+b1= array(['A','E','I','O','U'])
+n = input(': ').upper()
+i,t,c = 0,0,0
+while i < len(n):
+	while c < size(b1):
+		if n[i] == b1[c]:
+			t = 1
+		c += 1
+	if t == 0:
+			n.replace(n[i],'p')
+	i += 1
+	c = 0
+	t = 0
+print(n)",,,
+PH2,2023-1/528/users/8786/executions/4950_2445.log,2023-08-16 13:13:09,33.0,"conversao = str(input(""Conversao de uma unidade a outra: ""))
+temperatura = float(input(""Digite um valor: ""))
+
+if conversao == conversao.lower():
+	conversao.upper()
+#if conversao == conversao.lower():
+#	print(conversao.upper())
+	
+C = (5 / 9) * (temperatura - 32)
+F = (5 / 9) * temperatura + 32
+
+if conversao == C:
+	print(round(F, 2))
+else:
+	print(round(C, 2))",,,
+PH2,2023-1/527/users/8800/executions/4977_6535.log,2023-08-24 16:24:51,33.0,"nome = input(""digite seu nick: "")
+nome.upper()
+if nome == ""frodo"":
+	print(""Bem-vindo, portador do Anel de Sauron!"")
+else:
+	print(""Seja bem-vindo,"", nome)",,,
+PH2,2022-2/486/users/8204/executions/4750_6344.log,2023-06-05 20:14:37,100.0,"s = input(""digite o nome: "").upper()
+if s[4] == ""C"":
+	s[4] .lower()
+	s[4] .upper()
+	print(s)
+else:
+	print('nome invalido')
+",,,
+PH2,2023-1/530/users/8738/executions/4880_1559.log,2023-07-28 22:22:38,0.0,"frase=""Ada Lovelace foi a primeira programadora da historia""
+frase.upper()
+print(frase.upper())",,,
+PH2,2023-1/530/users/8738/executions/4880_1559.log,2023-07-28 22:22:00,,"frasse=""Ada Lovelace foi a primeira programadora da historia""
+frase.upper()
+print(frase.upper())",,,
+PH2,2023-1/527/users/8800/executions/4977_6535.log,2023-08-24 16:21:10,67.0,"nome = input(""digite seu nome: "")
+if nome == ""FRODO"":
+	nome.upper()
+	print(""Bem-vindo, portador do Anel de Sauron!"")
+else:
+	print(""Seja bem-vindo,"", nome)",,,
+PH2,2023-1/528/users/8773/executions/5130_6624.log,2023-10-17 18:29:05,33.0,"frase= input(""coloque o numero:"")
+frase.upper()
+contador_a=0
+i=0
+tamanho=len(frase)
+while i<tamanho:
+	if frase[i]==""A"":
+		contador_a+=1
+	i+=1
+print(contador_a)
+
+",,,
+PH2,2023-1/528/users/8786/executions/4950_2445.log,2023-08-15 20:29:22,0.0,"escala = str(input(""digite a escala: ""))
+escala.upper()
+temperatura = float(input(""digite a temperatura: ""))
+
+C =  (5 / 9) * (temperatura - 32)
+F = C * 1.8 + 32
+
+
+if escala == C:
+	print(round(C, 2))
+else:
+	print(round(F, 2))
+	",,,
+PH2,2023-1/524/users/6373/executions/4973_6511.log,2023-08-23 19:07:19,67.0,"entrada = input(""digite o tipo de entrada:"")
+quantidade = int(input(""digite a quantidade:""))
+valor = 25.90 * quantidade
+(entrada.upper())
+if (entrada == ""b""):
+	valor_total = valor - 0.9
+	
+else: 
+	valor_total = valor
+print(round(valor_total,2))
+
+
+
+",,,
+PH2,2023-1/528/users/8786/executions/4950_2445.log,2023-08-15 20:12:28,33.0,"escala = str(input(""digite a escala: ""))
+escala.upper()
+temperatura = float(input(""digite a temperatura: ""))
+
+C =  (5 / 9) * (temperatura - 32)
+F = (temperatura - 32) / 1.8
+
+
+if escala == F:
+	print(round(C, 2))
+else:
+	print(round(F, 2))
+	",,,
+PH2,2022-2/485/users/8161/executions/4385_1559.log,2023-03-20 11:52:29,,"print .upper(""ADA LOVELACE FOI A PRIMEIRA PROGRAMADORA DA HISTORIA"")",,,
+PH2,2022-1/440/users/7558/executions/3993_2326.log,2022-12-06 19:41:49,100.0,"espaçoh = 3.674
+tempoh = 2.789
+hary = espaçoh/tempoh 
+espaçog = 3.7654
+tempog = 2.3479
+gin = espaçog/tempog
+nome = str(input())
+nome.upper()
+if nome == ""HARRY"" :
+	print(hary)
+if nome == ""GINA"" :
+	print(gin)",,,
+PH2,2023-1/527/users/8800/executions/4977_6535.log,2023-08-24 16:27:26,33.0,"nome = input(""digite seu nick: "")
+if nome == ""frodo"":
+	print(""Bem-vindo, portador do Anel de Sauron!"")
+	nome.upper()
+else:
+	print(""Seja bem-vindo,"", nome)
+	nome.upper()",,,
+PH2,2022-2/487/users/8193/executions/4542_3371.log,2023-04-19 15:12:59,0.0,"unidade = input(""unidade:"")
+valor = float(input(""valor:""))
+unidade.upper()
+if (unidade==""K""):
+	valor1= valor/1.60934
+else:
+	valor1=valor*1.60934
+print(round(valor,2))
+
+",,,
+PH2,2023-1/527/users/8816/executions/4977_6514.log,2023-08-24 16:24:35,33.0,"# faça seu código aqui!
+nome = input(""Qual o seu nick: "")
+
+
+if nome != ""OPTIMUS"":
+	print(""Seja bem-vindo,"", nome)
+	
+else:
+	nome.upper()
+	print(""Bem-vindo, guerreiro de Cybertron!"")",,,
+PH2,2022-1/443/users/7588/executions/4148_1187.log,2023-01-18 13:27:52,,"from numpy import *
+
+v = array(eval(input()))
+
+print(v[0])
+print(v[-1])
+print(size(v))
+print.lower(v)
+print.upper(v)
+print(v * 500)",,,
+PH2,2023-1/528/users/8786/executions/4950_2445.log,2023-08-15 21:34:26,67.0,"escala = input(""Do C para Celsius e F para Fahrenheit: "")
+escala.upper()
+temperatura = float(input(""digite um valor: ""))
+
+F = (temperatura * 1.8 + 32)
+C = (5 / 9) * (F - 32)
+
+if escala == F:
+	print(float(round(C, 2)))
+else:
+	print(float(round(F, 2)))",,,
+PH2,2023-1/530/users/8738/executions/4880_1559.log,2023-07-28 22:23:29,0.0,"frase=""Ada Lovelace foi a primeira programadora da historia""
+frase.upper()
+print(""frase.upper()"")",,,
+PD1,2023-1/528/users/8773/executions/5130_3590.log,2023-10-17 19:35:09,0.0,"from numpy import*
+vetor=array(eval(input("""")))
+pontos=0
+i=0
+while i<size(vetor):
+	if vetor[i]==1:
+		pontos= pontos+10
+	if vetor[i]==2:
+		pontos=pontos+5
+	if vetor[i]==3:
+		pontos= pontos+0
+	if vetor[i]==4:
+		pontos=pontos+5
+	if vetor[i]==5:
+		pontos=pontos+20
+	if vetor[i]==6:
+		pontos=pontos+10
+print(round(pontos,2))
+	",,,
+PD1,2022-2/491/users/7170/executions/4716_1614.log,2023-06-06 16:29:13,,"from numpy import *
+
+a = array(input(""Alimento: "").upper())
+q = array(input(""Quantidade: ""))
+i = 0
+v = zeros(size(q))
+
+while i < size(a):
+	while a[i] == ""BANANA"":
+		v[i] = 0.97		
+	while a[i] == ""BIFE"":
+		v[i] = 2.95		
+	while a[i] == ""FEIJOADA"":
+		v[i] = 1.27	
+	while a[i] == ""OMELETE"":
+		v[i] = 1.04		
+	while a[i] == ""TOMATE"":
+		v[i] = 0.2		
+	i+=1	
+	sum(v*q)
+
+print(round(s, 2))",,,
+PD1,2023-1/529/users/8804/executions/5038_6048.log,2023-09-18 15:17:27,,"num = int(input(""digite o numero:""))
+cont=0
+while um != 6:
+	if num != 6:
+		cont = cont +1
+	num = int(input(""digite o numero:""))
+print(cont)",,,
+PD1,2022-2/490/users/8409/executions/4664_5305.log,2023-05-25 12:51:01,,"import math
+x = float(input(""valor de x:""))
+k = int(input(""termos:""))
+soma = 0
+termo = 1
+fatorial = 1
+while contador <= k:
+	soma = soma + (x/fatorial)
+	termo = termo + 1 
+	fatorial = fatorial + 1
+print(round(soma,8))",,,
+PD1,2023-1/530/users/8744/executions/5043_6048.log,2023-09-21 13:20:07,0.0,"n = int(input(""digite o numero: ""))
+a = 0
+
+while (n != 6):
+	a = a + 1
+	
+print(a)
+",,,
+PD1,2023-1/528/users/8791/executions/5130_6629.log,2023-10-17 18:19:49,,"frase =(input())
+frase = frase.upper(""P"")
+contador_e = 0
+i = 0
+tamanho = len(frase)
+while i < tamanho:
+	if frase[i]==(""nao achei""):
+		contador_e+=1
+i+=1
+print(contador_e)
+",,,
+PD1,2023-1/529/users/5457/executions/5090_1206.log,2023-10-10 14:14:55,100.0,"from numpy import *
+
+v = array(eval(input(""entre com o vetor: "")))
+
+i = 0
+
+while (size(v) == 1):
+	print(vetor)
+else:
+	print(round(max(v), 2))
+print(size(v)-1)",,,
+PD1,2023-1/528/users/8889/executions/5130_6654.log,2023-10-17 19:00:19,,"from numpy import*
+#leitura dos vetores 
+notas = array(eval(input("""")))
+pesos [:1,3,2,5]
+i = 0 
+numerador = 0
+denominador = 0
+while (i < size (notas)):
+	numerador = numerador + notas * credito 
+	denominador = denominador + credito
+i = i + 1
+coeficiente = denominador/ denominador
+
+print (round(coeficiente,3))",,,
+PD1,2022-1/443/users/7598/executions/4176_1600.log,2023-01-24 15:37:08,0.0,"from numpy import*
+
+c = array(eval(input(""custo dos itens: "")))
+i = 0
+total = 0
+
+while(i<size(c)):
+	if (c[i] >=80):
+		total = total - 15/100
+	elif(c[i] < 80):
+		total = total + 0
+
+print(round(total,2))
+
+	
+",,,
+PD1,2022-1/443/users/7589/executions/4176_3588.log,2023-01-24 14:28:45,,"from numpy import *
+
+v = array(eval(input(""Coloque os aneis acertados na ordem: "")))
+
+p = 10000
+
+i = 0
+
+while (i < size(a)):
+	if (v[i] == 1):
+		p = p * 2
+	if (v[i] == 2):
+		p = p
+	if (v[i] == 3):
+		p = p / 2
+	if (v[i] == 4):
+		p = p / 4
+		
+print(p)
+
+
+
+
+
+
+
+
+
+
+print(a[-1])",,,
+PD1,2022-2/487/users/8184/executions/4698_6251.log,2023-06-05 00:54:52,0.0,"from numpy import*
+
+vet = array(eval(input(""pedidos com um item: "")))
+vet1 = array(eval(input(""pedidos com dois ou mais itens: "")))
+pui = 0
+pdmi = 0
+valort = 0
+i = 0
+
+while i < len(vet):
+	if vet[i] == 1:
+		pui += 1
+	elif vet[i] > 1:
+		pdmi += 1
+
+valort += vet1[i]
+i = i + 1
+
+saida = [pui, pdmi, valort]
+print(saida)",,,
+PD1,2023-1/527/users/8759/executions/5129_3588.log,2023-10-17 16:45:54,,"from numpy import*
+pontos= 10000
+ond= array(eval())
+i=0
+
+while i< size(ond):
+	if ond[i] == 1:
+		pontos= pontos*2
+	elif ond[i] == 2:
+		pontos= pontos
+	elif ond[i] == 3:
+		pontos= pontos / 2
+	elif ond[i] == 4:
+		pontos= pontos / 4
+		
+print(round(pontos, 2))",,,
+PD1,2023-1/528/users/8797/executions/5070_6611.log,2023-09-28 18:46:22,33.0,"# faça seu código aqui!
+x = int(input())
+n = 1
+soma = 0
+while n > x:
+	if n%3==0:
+		soma = soma + n
+		print()
+	
+print(""soma="",soma )
+",,,
+PD1,2022-1/442/users/6379/executions/4142_1621.log,2023-01-12 15:45:20,0.0,"from numpy import *
+prod = eval(input())
+custo = eval(input())
+v1 = array(prod)
+v2 = array(custo)
+total = 0
+i = 0
+while i < size(v1):
+	if v1[i] == ""ARROZ"":
+		total = total + 1.25 * v2[i]
+	if v1[i] == ""FEIJAO"":
+		total = total + 2.60 * v2[i]
+	if v1[i] == ""BIS"":
+		total = total + 1.80 * v2[i]
+	if v1[i] == ""MIOJO"":
+		total = total + 0.85 * v2[i]
+	if v1[i] == ""FANTA"":
+		total = total + 3.20 * v2[i]
+print(round(total,2))",,,
+PD1,2023-1/528/users/8889/executions/5130_3588.log,2023-10-17 18:30:59,0.0,"from numpy import*
+x= array(eval(input("""")))
+p = 1000
+i = 0
+while i < size (x):
+	if x[i]==1:
+		p = p *2
+	if x[i]==2:
+		p = p
+	if x[i]==3:
+		p= p/2
+	if x[i]==4:
+		p = p/4
+i+=1
+print(round(p,2))
+",,,
+PD1,2022-2/488/users/8403/executions/4682_6207.log,2023-05-23 09:48:21,0.0,"c = 0
+x = int(input('Valores:'))
+while x >= 0:
+   if x >= 26 and x <= 50:    
+      c = c + 1 
+print(c)		
+",,,
+PD1,2023-1/527/users/3566/executions/5021_6193.log,2023-09-23 14:58:20,0.0,"x = int(input())
+y = int(input())
+n = x
+while(n >= x and n <= y):
+	if n % 3 == 0:
+		print(n)",,,
+PD1,2022-2/486/users/5038/executions/4706_6250.log,2023-06-04 17:58:37,0.0,"texto = input(""texto: "")
+i = 0
+cont1 = 0
+cont2 = 0
+if(texto.isupper()):
+	print(""apenas maiusculas"")
+if(texto.islower()):
+	print(""apenas minussculas"")
+else:
+	while(i < len(texto)):
+		if(texto[i].isupper()):
+			cont1 +=1
+		else:
+			cont2 +=1
+	print(""maiusculas e minusculas: "", cont1,""maiusculas"", cont2, ""minusculas"")",,,
+PD1,2022-2/485/users/8170/executions/4629_6042.log,2023-05-10 16:35:09,0.0,"c = 0
+ac = 0
+x = int(input(""Digite numeros inteiros: ""))
+
+while (x>-1):
+	ac = c + x
+	c = c+1
+print(c)
+print(ac)",,,
+PD1,2022-1/442/users/7575/executions/4101_2497.log,2023-01-02 15:39:14,0.0,"# Instituto de Computacao - UFAM
+# Lab 04 - Ex 04
+# 20 / 06 / 2016
+
+qi = float(input(""Quantia inicial: ""))
+tempo = int(input(""Tempo de investimento: ""))
+juros = 0.04 # Juros de 4% ao mes
+saldo = qi # Variavel acumuladora
+
+# Valor inicial da variavel contadora
+cont = 0
+
+# Atualizacao de saldo
+while (tempo<tempo):
+	rend = saldo * juros
+	saldo = saldo + rend
+	print(round(saldo, 2)) # Exibicao de resultados
+	cont = cont+1
+	
+",,,
